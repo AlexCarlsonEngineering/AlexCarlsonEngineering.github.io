@@ -3,305 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Carlson — Mechanical Design Engineer</title>
-  <meta name="description" content="Alex Carlson is a mechanical design engineer at Shield AI building ruggedized ground support equipment. Portfolio of combat robots, mechanisms, and hardware projects." />
-  <meta property="og:title" content="Alex Carlson — Mechanical Design Engineer" />
-  <meta property="og:description" content="Ruggedized hardware, combat robots, and mechanisms. Concept to production." />
+  <title>Alex Carlson</title>
+  <meta name="description" content="Alex Carlson, mechanical engineer at Shield AI. Combat robots, mechanisms, and other things I've built." />
+  <meta property="og:title" content="Alex Carlson, mechanical engineer" />
+  <meta property="og:description" content="Combat robots, mechanisms, and other things I've built." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://alexcarlsonengineering.github.io/v2/img/hof-hero.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#top" aria-label="Alex Carlson, home">
-        <span class="brand-mark">AC</span>
-        <span>Alex Carlson</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#work" class="nav-keep">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="../files/CarlsonAlexResume2025.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a>
-      </nav>
-    </div>
+  <header class="col top">
+    <a class="name" href="index.html">Alex Carlson</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#work">Work</a>
+      <a href="../files/CarlsonAlexResume2025.pdf">Resume</a>
+      <a href="mailto:adcarl91@gmail.com">Email</a>
+    </nav>
   </header>
 
-  <main id="top">
+  <main>
+    <div class="col intro">
+      <div>
+        <h1>Hi, I'm Alex.</h1>
+        <p>I'm a mechanical engineer at <a href="https://shield.ai/v-bat/">Shield AI</a>, where I design ground support equipment for the V-BAT aircraft: power supplies, fuel and oil pumps, test stands.</p>
+        <p>Before that I studied mechanical engineering at UT Austin and spent a lot of my free time building robots. This page is a collection of things I've worked on.</p>
+      </div>
+      <figure class="me" style="margin:0">
+        <img src="img/portrait.jpg" width="900" height="1350" alt="Alex sitting in front of the UT Tower." />
+        <span class="hand">me, at the UT Tower</span>
+      </figure>
+    </div>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero gridpaper">
-      <div class="wrap">
+    <!-- Robot photo with hand-drawn notes -->
+    <figure class="wide annotated">
+      <svg viewBox="0 0 1400 1010" role="img" aria-labelledby="hof-title">
+        <title id="hof-title">Horns of Fury, a 15 lb combat robot, with handwritten notes pointing to the foam wheels, the belt drive for the weapon, and the horns.</title>
+        <image href="img/hof-hero.jpg" x="188" y="66" width="1024" height="878" />
+        <text class="note" x="700" y="46">15 lb, built in 5 weeks</text>
+        <path class="ink" d="M700 58 C 820 64, 960 60, 1112 56" />
+
+        <text class="note" x="40" y="96">foam</text>
+        <text class="note" x="30" y="140">wheels</text>
+        <path class="ink" d="M104 158 C 120 230, 190 268, 288 272" />
+        <path class="ink" d="M288 272 L 264 256 M288 272 L 266 291" />
+
+        <text class="note" x="1236" y="150">belt</text>
+        <text class="note" x="1230" y="194">drive</text>
+        <path class="ink" d="M1262 214 C 1240 300, 1180 334, 1112 336" />
+        <path class="ink" d="M1112 336 L 1135 320 M1112 336 L 1136 351" />
+
+        <text class="note" x="842" y="998">the horns</text>
+        <path class="ink" d="M836 984 C 806 978, 792 960, 786 934" />
+        <path class="ink" d="M786 934 L 780 957 M786 934 L 803 951" />
+      </svg>
+      <figcaption>Horns of Fury, the 15 lb robot I led the design of for Texas Combat Robotics. <a href="projects/horns-of-fury.html">How we built it</a>.</figcaption>
+    </figure>
+
+    <section id="projects" class="wide">
+      <h2>Projects</h2>
+
+      <article class="project big">
+        <div class="pics">
+          <img src="img/hof-arena.jpg" width="1000" height="667" alt="Horns of Fury flipping an opponent in the arena." loading="lazy" />
+          <img src="img/hof-cad.jpg" width="558" height="394" alt="CAD of the robot's internal layout with drive motors and electronics." loading="lazy" />
+        </div>
+        <div class="col" style="padding:0;margin:0">
+          <h3><a href="projects/horns-of-fury.html">Horns of Fury</a></h3>
+          <div class="meta">Texas Combat Robotics · Mechanical Design Lead</div>
+          <p>UT's first 15 lb combat robot. We had five weeks from the first CAD sketch to competition day at the first SXSW Battle Bots Metal Mayhem, and we finished 2nd in our group. I led the SolidWorks design and focused on making it tough but quick to repair between matches.</p>
+          <div class="links"><a href="projects/horns-of-fury.html">Full write-up</a><a href="../files/Alex%20Carlson%20Engineering%20Portfolio%20Web.pdf">One-page summary (PDF)</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="pics"><img src="img/sd1-battlebot.jpg" width="1000" height="730" alt="Small battlebot with a spinning front weapon and aluminum side plates." loading="lazy" /></div>
         <div>
-          <span class="status mono"><span class="dot"></span> Mechanical Design Engineer · Shield AI</span>
-          <h1>I design hardware that has to <em>survive</em> the real world.</h1>
-          <p class="lede">Ruggedized ground support equipment for the V-BAT aircraft by day. Combat robots and mechanisms the rest of the time. UT Austin Mechanical Engineering, Honors.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#work">Selected work <span class="arrow">→</span></a>
-            <a class="btn btn-ghost" href="../files/CarlsonAlexResume2025.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-          </div>
+          <h3>Spinner battlebot</h3>
+          <div class="meta">ME 366J Senior Design I · team of six</div>
+          <p>Our first combat robot. We worked through customer interviews, a House of Quality, a morph matrix and a Pugh chart before landing on a spinning weapon driven by pulleys instead of gears, since a belt can slip and absorb a hit where gear teeth would break. The side plates were milled from 6061 and pocketed down to 2.7 oz each.</p>
+          <div class="links"><a href="../files/Senior%20Design%201%20Final%20Presentation.pdf">Final presentation (PDF)</a></div>
         </div>
-        <figure class="fig">
-          <div class="frame"><span class="c1"></span><span class="c2"></span>
-            <img src="img/hof-hero.jpg" width="1024" height="878" alt="Horns of Fury, a 15 lb combat robot with orange armor, white side pods, green foam wheels and a belt-driven front weapon." />
-          </div>
-          <figcaption><span><b>Fig. 01</b> — Horns of Fury, 15 lb combat robot</span><span>Texas Combat Robotics</span></figcaption>
-        </figure>
-      </div>
+      </article>
+
+      <article class="project">
+        <div class="pics"><img src="img/basketball.jpg" width="1000" height="750" alt="Desktop basketball shooter with a linkage arm, a row of buttons and a small hoop." loading="lazy" /></div>
+        <div>
+          <h3>Basketball shooter</h3>
+          <div class="meta">Robotic Mechanisms Design · Spring 2024 · team of four</div>
+          <p>An automated version of a desktop basketball toy. A four-bar linkage throws the ball, and a button changes the motor speed so it can shoot to different spots on a 2 ft court. We worked backwards from target trajectories to get the link lengths and input speeds.</p>
+          <div class="links"><a href="../files/RMD%20Demo%20Slides.pdf">Demo slides (PDF)</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="pics">
+          <img src="img/disc-golf.jpg" width="900" height="720" alt="Render of a disc golf launcher on an aluminum extrusion frame." loading="lazy" />
+        </div>
+        <div>
+          <h3>Disc golf launcher</h3>
+          <div class="meta">Senior Design II · UT Austin</div>
+          <p>My capstone project: a disc golf launcher built on an aluminum extrusion frame. Write-up coming soon.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="pics"><img src="img/usv-kayak.jpg" width="1000" height="615" alt="Kayak fitted with an electronics box and a mounting rail, floating at a dock." loading="lazy" /></div>
+        <div>
+          <h3>Autonomous kayak</h3>
+          <div class="meta">Applied Research Laboratories · 2022</div>
+          <p>For my honors internship I turned a kayak into a small autonomous boat the lab could use to test marine autonomy software. I designed the mounts, wired and integrated the navigation controllers, and tuned the PID loops. This is the first time it went in the water.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="pics"><img src="img/rc-car.jpg" width="512" height="384" alt="Custom RC car with an orange 3D-printed chassis." loading="lazy" /></div>
+        <div>
+          <h3>R/C race car</h3>
+          <div class="meta">Machine Elements · UT Austin</div>
+          <p>A custom R/C car with a 3D-printed chassis, built for my machine elements class.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="pics"><img class="drawing" src="img/water-gun.jpg" width="1400" height="1082" alt="Exploded assembly drawing of a water gun with a parts list." loading="lazy" /></div>
+        <div>
+          <h3>Water gun drawing set</h3>
+          <div class="meta">Engineering Design Graphics · UT Austin</div>
+          <p>An assembly model and exploded drawing of a water gun, split into the water storage and water delivery subsystems, with a full parts list.</p>
+        </div>
+      </article>
     </section>
 
-    <!-- ============ STATS ============ -->
-    <section class="stats" aria-label="Highlights">
-      <div class="wrap">
-        <div class="stat"><div class="num">+200<small>%</small></div><div class="desc">Power available to the aircraft from an integrated power supply I designed at Shield AI</div></div>
-        <div class="stat"><div class="num">IP67</div><div class="desc">Sealed and rated to operate up to 55&nbsp;°C in the field</div></div>
-        <div class="stat"><div class="num">5<small>wk</small></div><div class="desc">From a blank CAD file to a 15&nbsp;lb robot fighting at SXSW</div></div>
-        <div class="stat"><div class="num">2<small>nd</small></div><div class="desc">In our group at the first SXSW Battle Bots Metal Mayhem event</div></div>
+    <section id="work" class="col">
+      <h2>Work</h2>
+
+      <div class="job">
+        <div class="job-head"><h3>Shield AI</h3><span class="when">Aug 2024 to now</span></div>
+        <div class="where">Mechanical Design Engineer</div>
+        <ul>
+          <li>Designed an integrated power supply that gives the aircraft and ground equipment 200% more available power. It's IP67 sealed, runs at up to 55 °C, and is easier for operators to handle and easier to manufacture.</li>
+          <li>Took custom fuel and oil pump systems from concept through release to manufacturing.</li>
+          <li>Designed, built and programmed a load and cycle test stand for carbon fiber aircraft ducts, and wrote the guide technicians use to run it.</li>
+          <li>Led harness design for ground support equipment in CAD and RapidHarness.</li>
+          <li>Prototyped a pneumatic launcher so the aircraft could launch at max gross takeoff weight.</li>
+        </ul>
       </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Applied Research Laboratories, UT</h3><span class="when">Nov 2023 to Jun 2024</span></div>
+        <div class="where">Mechanical Design Technician</div>
+        <ul>
+          <li>Designed tooling, jigs and fixtures for assembling acoustic projectors used in underwater vehicles.</li>
+          <li>Made drawings with GD&amp;T and tolerance stack analysis.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Texas Instruments</h3><span class="when">Summer 2023</span></div>
+        <div class="where">Equipment Engineering Intern</div>
+        <ul>
+          <li>Designed a fiber optic sensor mount for a harsh chemical environment to replace a discontinued part.</li>
+          <li>Wrote models to monitor tool conditions, which prevented thousands of dollars in scrapped product.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><h3>Applied Research Laboratories, UT</h3><span class="when">Jun to Dec 2022</span></div>
+        <div class="where">Honors Summer Intern</div>
+        <ul>
+          <li>Built the autonomous kayak above.</li>
+        </ul>
+      </div>
+
+      <p class="small muted" style="margin-top:24px">Tools I use most: SolidWorks and Siemens NX (plus Fusion 360 and Onshape at home), SolidWorks Simulation, CNC machining, sheet metal, 3D printing, laser cutting, Python and MATLAB.</p>
     </section>
 
-    <!-- ============ WORK ============ -->
-    <section class="section" id="work">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="label">01 / Selected work</span>
-          <div>
-            <h2>Projects</h2>
-            <p>Things I've designed, machined, wired, and broken. Each one taught me something about building hardware that holds up.</p>
-          </div>
-        </div>
-
-        <a class="feature" href="projects/horns-of-fury.html">
-          <div class="media"><img src="img/hof-arena.jpg" width="1000" height="667" alt="Horns of Fury flipping an opponent's robot in the arena." loading="lazy" /></div>
-          <div class="body">
-            <div class="label">AC-001 · Featured case study</div>
-            <h3>Horns of Fury</h3>
-            <p>As Mechanical Design Lead for Texas Combat Robotics, I led the design of UT's first 15&nbsp;lb combat robot, from concept to competition in five weeks.</p>
-            <dl class="specs">
-              <dt>Role</dt><dd>Mechanical Design Lead</dd>
-              <dt>Built with</dt><dd>SolidWorks · CNC milling · Sheet metal · 3D printing</dd>
-              <dt>Result</dt><dd>2nd in group, SXSW Metal Mayhem</dd>
-            </dl>
-            <span class="btn btn-primary more">Read the case study <span class="arrow">→</span></span>
-          </div>
-        </a>
-
-        <div class="grid">
-
-          <a class="card" href="../files/Senior%20Design%201%20Final%20Presentation.pdf" target="_blank" rel="noopener">
-            <div class="media"><img src="img/sd1-battlebot.jpg" width="1000" height="730" alt="Photo of a compact battlebot with a spinning front weapon and aluminum side plates." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-002</span><span class="label">ME 366J</span></div>
-              <h3>Spinner Battlebot</h3>
-              <p>Senior Design I. We ran interviews, a House of Quality, a morph matrix and a Pugh chart before picking a pulley-driven spinner. Its CNC-milled 6061 side plates were pocketed down to 2.7&nbsp;oz each.</p>
-              <ul class="tags"><li>SolidWorks</li><li>CNC</li><li>Concept selection</li></ul>
-              <div class="foot"><span class="link">Slides (PDF) ↗</span></div>
-            </div>
-          </a>
-
-          <a class="card" href="../files/RMD%20Demo%20Slides.pdf" target="_blank" rel="noopener">
-            <div class="media"><img src="img/basketball.jpg" width="1000" height="750" alt="Desktop basketball shooter on a wooden base with a linkage arm and a small hoop." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-003</span><span class="label">Robotic Mechanisms</span></div>
-              <h3>Basketball Shooter</h3>
-              <p>An automated four-bar linkage shooter. A button changes the motor speed to set the shot distance. We sized the links and input speeds from target trajectories across a 2&nbsp;ft court.</p>
-              <ul class="tags"><li>Linkage synthesis</li><li>Kinematics</li><li>Prototyping</li></ul>
-              <div class="foot"><span class="link">Slides (PDF) ↗</span></div>
-            </div>
-          </a>
-
-          <div class="card">
-            <div class="media"><img src="img/disc-golf.jpg" width="900" height="720" alt="CAD render of a disc golf launcher on an aluminum extrusion frame." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-004</span><span class="label">Senior Design II</span></div>
-              <h3>Disc Golf Launcher</h3>
-              <p>Capstone project: a disc golf launcher built on an aluminum extrusion frame.</p>
-              <ul class="tags"><li>SolidWorks</li><li>Rendering</li><li>Capstone</li></ul>
-              <div class="foot"><span class="soon">Write-up in progress</span></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="media"><img src="img/usv-kayak.jpg" width="1000" height="615" alt="Kayak fitted with an electronics box and mounting rail during its first in-water test." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-005</span><span class="label">ARL : UT</span></div>
-              <h3>Autonomous Surface Vessel</h3>
-              <p>I turned a kayak into a portable autonomous boat for testing marine autonomy engines. I designed the mounts, integrated the navigation controllers and tuned the PID loops.</p>
-              <ul class="tags"><li>Mechatronics</li><li>PID tuning</li><li>Field testing</li></ul>
-              <div class="foot"><span class="soon">Write-up in progress</span></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="media"><img src="img/rc-car.jpg" width="512" height="384" alt="Custom RC car with an orange 3D-printed chassis, viewed from above." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-006</span><span class="label">Machine Elements</span></div>
-              <h3>Custom R/C Race Car</h3>
-              <p>A custom R/C race car built for Machine Elements, with a 3D-printed chassis and integrated drive electronics.</p>
-              <ul class="tags"><li>Drivetrain</li><li>3D printing</li><li>Integration</li></ul>
-              <div class="foot"><span class="soon">Write-up in progress</span></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="media contain"><img src="img/water-gun.jpg" width="1400" height="1082" alt="Exploded assembly drawing of a water gun with a numbered bill of materials." loading="lazy" /></div>
-            <div class="body">
-              <div class="topline"><span class="label">AC-007</span><span class="label">Design Graphics</span></div>
-              <h3>Water Gun Assembly</h3>
-              <p>Full assembly model and exploded drawing with a BOM, broken into water-storage and water-delivery subsystems.</p>
-              <ul class="tags"><li>Drawings</li><li>BOM</li><li>Assemblies</li></ul>
-              <div class="foot"><span class="soon">Drawing set</span></div>
-            </div>
-          </div>
-
-        </div>
+    <section id="background" class="col">
+      <h2>How I got here</h2>
+      <p>I got into engineering on my high school's FIRST Robotics team, FRC 3847. I was a mechanical design lead and also ran our scouting and strategy. That led to mechanical engineering at UT Austin (Engineering Honors, minor in computer science), and then to Texas Combat Robotics.</p>
+      <div class="pair">
+        <img src="img/frc.jpg" width="1000" height="1500" alt="FRC Team 3847's robot on a FIRST Robotics Competition banner." loading="lazy" style="object-position:center 35%" />
+        <img src="img/hof-team.jpg" width="1158" height="869" alt="Texas Combat Robotics team after the SXSW event." loading="lazy" />
       </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section" id="experience">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="label">02 / Experience</span>
-          <div>
-            <h2>Where I've worked</h2>
-          </div>
-        </div>
-
-        <ol class="timeline">
-          <li class="job">
-            <div class="when mono">Aug 2024 —<br /><span class="now">● Present</span></div>
-            <div>
-              <h3>Mechanical Design Engineer</h3>
-              <div class="org"><a href="https://shield.ai/v-bat/" target="_blank" rel="noopener">Shield AI</a> · V-BAT ground support equipment</div>
-              <ul>
-                <li>Designed an integrated power supply that <strong>raised available power by 200%</strong> while improving ergonomics and manufacturability. It holds an <strong>IP67</strong> rating and operates up to <strong>55&nbsp;°C</strong>.</li>
-                <li>Designed custom fuel and oil pump systems and owned them from concept through release to manufacturing.</li>
-                <li>Designed, built and programmed a load and cycle test stand for carbon fiber aircraft ducts.</li>
-                <li>Led harness design for ground support equipment, modeling harnesses in CAD and drafting them in RapidHarness.</li>
-                <li>Rapidly prototyped a pneumatic launcher to launch the aircraft at max gross takeoff weight.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="job">
-            <div class="when mono">Nov 2023 —<br />Jun 2024</div>
-            <div>
-              <h3>Mechanical Design Technician</h3>
-              <div class="org"><a href="https://wwwext.arlut.utexas.edu/atl.shtml" target="_blank" rel="noopener">Applied Research Laboratories : UT</a></div>
-              <ul>
-                <li>Designed tooling, jigs and fixtures that streamlined assembly of acoustic projectors for underwater vehicles.</li>
-                <li>Drafted drawings using GD&amp;T and tolerance stack analysis to hold build quality.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="job">
-            <div class="when mono">May 2023 —<br />Aug 2023</div>
-            <div>
-              <h3>Equipment Engineering Intern</h3>
-              <div class="org"><a href="https://www.ti.com/about-ti/company/ti-at-a-glance/manufacturing.html" target="_blank" rel="noopener">Texas Instruments</a></div>
-              <ul>
-                <li>Designed a fiber optic sensor mount for harsh chemical environments to replace a discontinued part.</li>
-                <li>Programmed dynamic tool-condition models that <strong>prevented thousands of dollars in scrap</strong>.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="job">
-            <div class="when mono">Jun 2022 —<br />Dec 2022</div>
-            <div>
-              <h3>Honors Summer Intern</h3>
-              <div class="org"><a href="https://wwwext.arlut.utexas.edu/atl.shtml" target="_blank" rel="noopener">Applied Research Laboratories : UT</a></div>
-              <ul>
-                <li>Built an autonomous unmanned surface vessel for testing marine autonomy engines, covering the mechanical design, wiring, controller integration and PID tuning.</li>
-              </ul>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ TOOLBOX ============ -->
-    <section class="section" id="toolbox">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="label">03 / Toolbox</span>
-          <div><h2>How I build</h2></div>
-        </div>
-        <div class="toolbox">
-          <div class="tool"><span class="label">CAD</span><h3>Design</h3><ul><li>SolidWorks</li><li>Siemens NX</li><li>Fusion 360 · Onshape</li><li>GD&amp;T · tolerance stacks</li></ul></div>
-          <div class="tool"><span class="label">DFM</span><h3>Manufacturing</h3><ul><li>CNC machining</li><li>Sheet metal design</li><li>3D printing</li><li>Laser cutting &amp; etching</li></ul></div>
-          <div class="tool"><span class="label">Elec</span><h3>Mechatronics</h3><ul><li>Harness design · RapidHarness</li><li>Component selection</li><li>PCB mechanical interfaces</li><li>Test stands &amp; fixtures</li></ul></div>
-          <div class="tool"><span class="label">Code</span><h3>Analysis &amp; software</h3><ul><li>SolidWorks Simulation (FEA)</li><li>Python · MATLAB</li><li>Java · Swift</li><li>PID tuning</li></ul></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABOUT ============ -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="label">04 / About</span>
-          <div><h2>Hi, I'm Alex.</h2></div>
-        </div>
-        <div class="about">
-          <figure class="fig portrait">
-            <div class="frame"><span class="c1"></span><span class="c2"></span>
-              <img src="img/portrait.jpg" width="900" height="1350" alt="Alex Carlson sitting in front of the UT Austin Tower." loading="lazy" />
-            </div>
-            <figcaption><span><b>Fig. 02</b> — UT Austin, BSME '24</span></figcaption>
-          </figure>
-          <div class="copy">
-            <p>I'm a mechanical engineer who likes starting from first principles, getting my hands on the hardware, and designing for the person who has to use it.</p>
-            <p>It started on my high school FIRST Robotics team, where I was a mechanical design lead and ran scouting and strategy. That led to Mechanical Engineering at UT Austin (Engineering Honors, CS minor), then Texas Combat Robotics, and now Shield AI, where my designs go out into the field.</p>
-            <div class="minis">
-              <figure class="fig">
-                <div class="frame"><span class="c1"></span><span class="c2"></span><img src="img/frc.jpg" width="1000" height="1500" alt="FRC Team 3847 robot on a FIRST Robotics Competition winner's banner." loading="lazy" style="aspect-ratio:4/5;object-fit:cover;object-position:center 30%" /></div>
-                <figcaption><span><b>Fig. 03</b> — FRC 3847, where it started</span></figcaption>
-              </figure>
-              <figure class="fig">
-                <div class="frame"><span class="c1"></span><span class="c2"></span><img src="img/hof-team.jpg" width="1158" height="869" alt="Texas Combat Robotics team standing in the arena after competing." loading="lazy" style="aspect-ratio:4/5;object-fit:cover" /></div>
-                <figcaption><span><b>Fig. 04</b> — Texas Combat Robotics</span></figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="label">05 / Contact</span>
-          <div>
-            <h2>Let's build something.</h2>
-            <a class="big-link" href="mailto:adcarl91@gmail.com">adcarl91@gmail.com</a>
-          </div>
-        </div>
-        <div class="actions">
-          <a class="btn" href="https://www.linkedin.com/in/alex-carlson-meche" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn" href="../files/CarlsonAlexResume2025.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a>
-        </div>
-      </div>
+      <p class="small muted"><i>Left: our FRC robot. Right: Texas Combat Robotics at SXSW.</i></p>
     </section>
   </main>
 
-  <footer class="titleblock">
-    <div class="wrap">
-      <div class="tb">
-        <div class="cell"><div class="k">Title</div><div class="v">Alex Carlson — Engineering Portfolio</div></div>
-        <div class="cell"><div class="k">Drawn by</div><div class="v">A. Carlson</div></div>
-        <div class="cell"><div class="k">Material</div><div class="v">HTML / CSS</div></div>
-        <div class="cell"><div class="k">Rev</div><div class="v">B</div></div>
-        <div class="cell"><div class="k">Sheet</div><div class="v">1 of 2</div></div>
-      </div>
-    </div>
+  <footer class="col">
+    <hr class="rule" />
+    <p style="margin-top:24px">The best way to reach me is <a href="mailto:adcarl91@gmail.com">adcarl91@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/alex-carlson-meche">LinkedIn</a>, and here's my <a href="../files/CarlsonAlexResume2025.pdf">resume</a>.</p>
   </footer>
 
 </body>
